@@ -4,6 +4,15 @@ import unirest
 from forms import MessageForm
 from app import database
 from app import simple 
+from flask_navigation import Navigation
+
+nav = Navigation(Coursework)
+
+nav.Bar('top', [
+nav.Item('Home', 'index'),
+nav.Item('Emotion App','emotion'),
+nav.Item('Visualization App','embed')
+])
 
 @app.route('/')
 @app.route('/index/')
