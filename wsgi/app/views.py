@@ -6,7 +6,7 @@ from app import database
 from app import simple 
 from flask_navigation import Navigation
 
-nav = Navigation(mja30apitest1)
+nav = Navigation(app)
 
 nav.Bar('top', [
 nav.Item('Home', 'index'),
