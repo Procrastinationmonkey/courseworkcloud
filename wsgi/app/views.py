@@ -25,7 +25,7 @@ def embed():
 
 @app.route('/emotion/')
 def emotion():
-	return render_template("my_form.html",mood='message',form=MessageForm())
+	return render_template("my_form.html",mood=message,form=MessageForm())
 
 @app.route('/emotion/', methods=['POST'])
 def emotion_post():
