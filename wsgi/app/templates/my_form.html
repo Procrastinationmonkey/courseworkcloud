@@ -1,10 +1,12 @@
 {% extends "base.html" %}
+<head>
+  <title>App will show images based on sentiment analysis through external API</title>
+
+  <!-- CSS  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
-{% endblock %}
-{% block title %} Emotion app {% endblock %}
-{% block content %}
-      <h5 class="header col s12 light">The app will show 3 different pictures based on the sentiment analysis done through external API https://community-sentiment.p.mashape.com/text/</h5>
-      </div>
 {% endblock %}
 <form action="" method="POST">
  	{{ form.csrf_token }}
