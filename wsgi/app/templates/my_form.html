@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
 {% endblock %}
+{% block title %} Emotion app {% endblock %}
 {% block content %}
+      <h5 class="header col s12 light">The app will show 3 different pictures based on the sentiment analysis done through external API https://community-sentiment.p.mashape.com/text/</h5>
+      </div>
+{% endblock %}
 <form action="" method="POST">
  	{{ form.csrf_token }}
  	{{ form.message.label }} 
