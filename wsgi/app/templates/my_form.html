@@ -1,7 +1,4 @@
-<html lang="en">
-<head>
-  <title>App will show images based on sentiment analysis through external API</title>
-</head>
+{% extends "base.html" %}
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
 {% endblock %}
 <form action="" method="POST">
@@ -11,4 +8,4 @@
     <input type=submit value="Send">
 </form>
 {% endblock %}
-</html>
+
