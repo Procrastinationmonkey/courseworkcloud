@@ -1,11 +1,9 @@
 {% extends "base.html" %}
+<html lang="en">
 <head>
   <title>App will show images based on sentiment analysis through external API</title>
-
-  <!-- CSS  -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 </head>
+</html>
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
 {% endblock %}
 <form action="" method="POST">
