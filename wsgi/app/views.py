@@ -11,7 +11,7 @@ nav = Navigation(app)
 nav.Bar('top', [
 nav.Item('Home', 'index'),
 nav.Item('Emotion App','emotion'),
-nav.Item('Visualization App','visualize_test')
+nav.Item('Visualization App','embed')
 ])
 
 @app.route('/')
