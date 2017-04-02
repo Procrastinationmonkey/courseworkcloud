@@ -12,7 +12,7 @@ nav.Bar('top', [
 nav.Item('Home', 'index'),
 nav.Item('Emotion App','emotion_post'),
 nav.Item('Visualization App','polynomial')
-nav.Item('Database Collection','get_all_collections')
+
 ])
 
 @app.route('/')
