@@ -11,7 +11,8 @@ nav = Navigation(app)
 nav.Bar('top', [
 nav.Item('Home', 'index'),
 nav.Item('Emotion App','emotion_post'),
-nav.Item('Visualization App','polynomial')
+nav.Item('Visualization App','polynomial'),
+nav.Item('Database','get_database_collections')
 ])
 
 @app.route('/')
