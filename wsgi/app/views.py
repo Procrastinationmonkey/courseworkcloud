@@ -16,7 +16,7 @@ nav.Item('Database','get_all_collections')
 ])
 
 @app.route('/')
-#@app.route('/index/')
+@app.route('/index/')
 def index():
     return render_template("index.html")
 
