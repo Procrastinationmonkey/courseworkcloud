@@ -26,7 +26,9 @@ def getallpersonnel():
 @app.route('/database/add', methods=['GET'])
 def insert_into_db():
         collection = mongo.db.test
-	collection.insert_one({'Name': 'testing another name', 'Profession': 'Teacher'})
+	collection.insert_one({'Name': 'Jawad', 'Profession': 'Student'})
+	collection.insert_one({'Name': 'Shankar', 'Profession': 'Student'})
+	collection.insert_one({'Name': 'Mike', 'Profession': 'Teacher'})
 	return jsonify({'result' : "successfull"})
 
 
