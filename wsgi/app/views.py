@@ -12,11 +12,10 @@ nav.Bar('top', [
 nav.Item('Home', 'index'),
 nav.Item('Emotion App','emotion_post'),
 nav.Item('Visualization App','polynomial')
-nav.Item('Database','get_all_collections')
 ])
 
 @app.route('/')
-@app.route('/index/')
+#@app.route('/index/')
 def index():
     return render_template("index.html")
 
